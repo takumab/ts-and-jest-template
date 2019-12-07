@@ -1,0 +1,32 @@
+{
+  "name": "ts-and-jest-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./build/app.js",
+    "dev": "./src/app.ts",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^3.7.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testMatch": [
+      "**/__tests__/**/*.(ts|js|tsx|jsx)",
+      "**/?(*.)(spec|test).ts?(x)"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.2.0"
+  }
+}
